@@ -11,7 +11,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
-
+import { SliderComponent } from './slider/slider.component';
+import { AppRoutesModule} from './app-routes/app-routes.module';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,12 @@ import { AdminComponent } from './admin/admin.component';
     SidebarComponent,
     FooterComponent,
     ProductsComponent,
-    AdminComponent
+    AdminComponent,
+    SliderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
