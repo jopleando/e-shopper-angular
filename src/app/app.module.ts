@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import{ProductsService} from './products.service'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -11,7 +11,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
-import { SliderComponent } from './slider/slider.component';
+//import { SliderComponent } from './slider/slider.component';
 import { AppRoutesModule} from './app-routes/app-routes.module';
 
 @NgModule({
@@ -25,13 +25,13 @@ import { AppRoutesModule} from './app-routes/app-routes.module';
     FooterComponent,
     ProductsComponent,
     AdminComponent,
-    SliderComponent
+    //SliderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutesModule,
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
