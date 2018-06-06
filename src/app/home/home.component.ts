@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsService } from '../products.service'
 
 @Component({
   selector: 'app-home',
@@ -8,16 +7,7 @@ import { ProductsService } from '../products.service'
 })
 export class HomeComponent implements OnInit {
 
-	products:any;
-	date= new Date()
-
-   constructor( private productsService: ProductsService) { 
-  		productsService.getNews().subscribe(
-  			data => {
-  				this.products=data
-  			}
-  		)
-  }
+  constructor() { }
 
   ngOnInit() {
   }
